@@ -1,19 +1,17 @@
 cask "convex-panel" do
-  arch arm: "arm64", intel: "x64"
-
-  version "0.1.0"
+  version "0.3.7"
 
   if Hardware::CPU.arm?
-    sha256 "ee495d935967e31ccbe35d06d6005bd9c0172cc7a0931dba72a36b3dad04bc55"
-    url "https://github.com/robertalv/convex-panel/releases/download/v#{version}/Convex-Panel-macos-arm64.dmg"
+    sha256 "d81f14f649210076771fc76d2983d24b4a703f37a2b1d0c2883eb505612535f1"
+    url "https://github.com/robertalv/convex-panel/releases/download/v#{version}/Convex.Panel_#{version}_aarch64.dmg"
   else
-    sha256 "91bfadc639d0cf7ff476f711ac7c3a7f164e89bb52e11d5669b4d"
-    url "https://github.com/robertalv/convex-panel/releases/download/v#{version}/Convex-Panel-macos-x64.dmg"
+    sha256 "ab8be6738011a0b36a0c08654836483990073976acf84018753f4272457c0f33"
+    url "https://github.com/robertalv/convex-panel/releases/download/v#{version}/Convex.Panel_#{version}_x64.dmg"
   end
 
   name "Convex Panel"
   desc "Debugging and monitoring tool for Convex applications"
-  homepage "https://github.com/robertalv/convex-panel"
+  homepage "https://convexpanel.dev"
 
   livecheck do
     url :url
