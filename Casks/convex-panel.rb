@@ -1,12 +1,12 @@
 cask "convex-panel" do
-  version "0.3.15"
+  version "0.3.17"
 
   if Hardware::CPU.arm?
-    sha256 "bb45d6e8ed34ea76aaf481db59346601c0ec0899180e24e2472fef6bf6f014e9"
-    url "https://github.com/robertalv/convex-panel/releases/download/v#{version}/Convex.Panel_0.3.12_aarch64.dmg"
+    sha256 "605dc90fd33431e6bfefc0a715a9507c70787e485bfee6b91aca18fef6fa43bb"
+    url "https://github.com/robertalv/convex-panel/releases/download/v#{version}/Convex.Panel_0.3.17_aarch64.dmg"
   else
-    sha256 "cf3379d6a1e62f5f1217af95bee90e97e7d1fb29163548168456249d9b713ce3"
-    url "https://github.com/robertalv/convex-panel/releases/download/v#{version}/Convex.Panel_0.3.12_x64.dmg"
+    sha256 "0f7101bc0870b6892b9732baa1ad89d10195f2b85a3246c08ce7ee5a555bfb26"
+    url "https://github.com/robertalv/convex-panel/releases/download/v#{version}/Convex.Panel_0.3.17_x64.dmg"
   end
 
   name "Convex Panel"
